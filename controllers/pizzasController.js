@@ -8,3 +8,18 @@ export const getAll = async (req, res) => {
     res.json(results);
 
 };
+
+export const destroyById = async (req, res) => {
+    const id = Number(req.params.id);
+
+    if (Number.isNaN(id) || !Number.isInteger(id)) {
+        res.status(400).json({ error: 'id must be an integer' });
+        return;
+    }
+
+    const sql = 'DELETE FROM pizzas WHERE id = ?';
+    await connection.query(sql, [id]);
+
+
+    res.sendStatus(204);
+};
