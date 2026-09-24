@@ -6,3 +6,6 @@ export const pizzasRouter = express.Router();
 // Index di tutte le pizze
 pizzasRouter.get('/', pizzasController.getAll);
 
+// Destroy
+pizzasRouter.delete('/:id', pizzasController.destroyById);
+
