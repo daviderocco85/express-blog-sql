@@ -1,8 +1,8 @@
 import express from 'express';
-import * as postsController from '../controllers/pizzasController.js';
+import * as pizzasController from '../controllers/pizzasController.js';
 
 export const pizzasRouter = express.Router();
 
 // Index di tutte le pizze
-pizzasRouter.get('/', postsController.getAll);
+pizzasRouter.get('/', pizzasController.getAll);
 
