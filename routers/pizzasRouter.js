@@ -1,14 +1,14 @@
 import express from 'express';
-import * as pizzasController from '../controllers/pizzasController.js';
+import * as postsController from '../controllers/postsController.js';
 
-export const pizzasRouter = express.Router();
+export const postsRouter = express.Router();
 
-// Index di tutte le pizze
-pizzasRouter.get('/', pizzasController.getAll);
+// Index di tutti gli articoli
+postsRouter.get('/', postsController.getAll);
 
 // Show dell'articolo con specifico id
-pizzasRouter.get('/:id', pizzasController.getById);
+postsRouter.get('/:id', postsController.getById);
 
 // Destroy
-pizzasRouter.delete('/:id', pizzasController.destroyById);
+postsRouter.delete('/:id', postsController.destroyById);
 
