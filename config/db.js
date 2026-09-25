@@ -9,5 +9,5 @@ export const connection = await mysql.createConnection({
     database: process.env.DB_NAME
 });
 
-console.log('Database connected successfully to pizzeria_db');
+console.log('Database connected successfully to blog_db');
 
