@@ -29,7 +29,7 @@ Progetto Blog con Express.js, Routing, Endpoint API CRUD e integrazione con Data
 - Resituire con la **API di SHOW** il post desiderato in formato **JSON**.
 - Verificare su **Postman** che la risposta sia corretta.
 
-## Bonus:
+## Bonus
 
 - Restituire con la **SHOW** il post comprensivo di tag, recuperandoli grazie alla relazione tra `post` e `tags`, esistente sul database.
 
